@@ -34,7 +34,273 @@
       margin-bottom: 30px;
     }
 
-    .greek-title {
+    .title-gr {
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 54px;
+      line-height: 1.08;
+      font-weight: 700;
+    }
+
+    .years-gr {
+      margin-top: 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      font-weight: 700;
+    }
+
+    .divider {
+      width: 66px;
+      height: 2px;
+      background: rgba(255,255,255,0.55);
+      margin: 42px auto 38px;
+    }
+
+    .title-en {
+      max-width: 760px;
+      margin: 0 auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 39px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .years-en {
+      margin-top: 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+    }
+
+    .author {
+      margin-top: 43px;
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .content {
+      background: #f5f5f3;
+      padding: 53px 30px 45px;
+      text-align: center;
+    }
+
+    .event-gr,
+    .event-en {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .event-en {
+      margin-top: 18px;
+      color: #555;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 42px;
+    }
+
+    .button {
+      display: inline-block;
+      min-width: 220px;
+      padding: 14px 27px;
+      border: 2px solid #24577d;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.35;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: #24577d;
+      color: white;
+    }
+
+    .button-secondary {
+      background: transparent;
+      color: #24577d;
+    }
+
+    .button:hover {
+      opacity: 0.88;
+    }
+
+    .button-en {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .description {
+      max-width: 850px;
+      margin: 45px auto 0;
+      padding: 0 30px 20px;
+      text-align: center;
+      color: #666;
+    }
+
+    .description p {
+      margin: 6px 0;
+    }
+
+    .description-gr {
+      font-size: 16px;
+    }
+
+    .description-en {
+      font-size: 15px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding: 50px 20px;
+      }
+
+      .label {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+      }
+
+      .title-gr {
+        font-size: 36px;
+      }
+
+      .years-gr {
+        font-size: 25px;
+      }
+
+      .title-en {
+        font-size: 30px;
+      }
+
+      .years-en {
+        font-size: 22px;
+      }
+
+      .author {
+        font-size: 17px;
+      }
+
+      .content {
+        padding: 40px 20px;
+      }
+
+      .event-gr,
+      .event-en {
+        font-size: 16px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .button {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .description {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="label">
+      ΔΗΜΟΓΡΑΦΙΚΗ ΠΑΡΟΥΣΙΑΣΗ · DEMOGRAPHIC PRESENTATION
+    </div>
+
+    <h1 class="title-gr">
+      Ο πληθυσμός της Θεσσαλίας,<br>
+      της Μαγνησίας και του Πηλίου
+    </h1>
+
+    <div class="years-gr">
+      1961–2021
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="title-en">
+      The Population of Thessalia,<br>
+      Magnesia, and Pelion
+    </div>
+
+    <div class="years-en">
+      1961–2021
+    </div>
+
+    <div class="author">
+      Δρ. Μπρένταν Μάλλαν<br>
+      Brendan Mullan, Ph.D.
+    </div>
+
+  </section>
+
+
+  <main class="content">
+
+    <p class="event-gr">
+      Δημοτική παρουσίαση, Καλαμάκι (Προπάν), Πήλιο<br>
+      4 Ιουλίου 2026
+    </p>
+
+    <p class="event-en">
+      Municipal presentation, Kalamaki (Propan), Pelion<br>
+      July 4, 2026
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="button button-primary"
+        href="The Demography of Pelion.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        Προβολή Παρουσίασης<br>
+        <span class="button-en">View Presentation</span>
+      </a>
+
+      <a
+        class="button button-secondary"
+        href="The Demography of Pelion.pdf"
+        download>
+        Λήψη PDF<br>
+        <span class="button-en">Download PDF</span>
+      </a>
+
+    </div>
+
+    <div class="description">
+
+      <p class="description-gr">
+        Δημογραφική εξέταση της μακροχρόνιας πληθυσμιακής μεταβολής
+        στη Θεσσαλία, τη Μαγνησία και τους οικισμούς του Πηλίου.
+      </p>
+
+      <p class="description-en">
+        A demographic examination of long-term population change
+        in Thessalia, Magnesia, and the settlements of Pelion.
+      </p>
+
+    </div>
+
+  </main>
+
+</body>
+</html>    .greek-title {
       max-width: 900px;
       margin: 0 auto 10px;
       font-family: Georgia, "Times New Roman", serif;
